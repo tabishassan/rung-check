@@ -1,0 +1,30 @@
+{
+	"name": "rung-check-api",
+	"main": "src/worker.js",
+	"workers_dev": true,
+	"preview_urls": false,
+	"compatibility_date": "2026-09-14",
+	"observability": {
+		"enabled": true,
+		"head_sampling_rate": 1,
+		"redact_query_string": false,
+		"logs": {
+			"enabled": true,
+			"head_sampling_rate": 1,
+			"persist": true,
+			"invocation_logs": true
+		},
+		"traces": {
+			"enabled": false,
+			"persist": true,
+			"head_sampling_rate": 1
+		}
+	},
+	"d1_databases": [
+		{
+			"binding": "rung_check_leads",
+			"database_name": "rung-check-leads",
+			"database_id": "b778d057-9489-4e08-9229-6eebddd5d99a"
+		}
+	]
+}

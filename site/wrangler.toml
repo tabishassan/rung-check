@@ -1,0 +1,6 @@
+﻿name = "white-wildflower-c26a"
+compatibility_date = "2026-09-16"
+account_id = "89e23acbab54760b2ed3f6affe9dbe28"
+
+[assets]
+directory = "./public"
