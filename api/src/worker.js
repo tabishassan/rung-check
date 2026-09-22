@@ -972,6 +972,7 @@ const DASHBOARD_HTML = `<!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Rung Check &mdash; Leads Dashboard</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2328ACDC'/%3E%3Crect x='20' y='10' width='6' height='44' fill='white'/%3E%3Crect x='38' y='10' width='6' height='44' fill='white'/%3E%3Crect x='20' y='18' width='24' height='6' fill='white'/%3E%3Crect x='20' y='32' width='24' height='6' fill='white'/%3E%3Crect x='20' y='46' width='24' height='6' fill='white'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;500;600;700&display=swap">
 <style>
   :root {
@@ -1212,7 +1213,7 @@ const DASHBOARD_HTML = `<!DOCTYPE html>
       </div>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>Name</th><th>Email</th><th>Score</th><th>Tier</th><th>Date (PKT)</th><th>LinkedIn</th><th>Report</th></tr></thead>
+          <thead><tr><th>#</th><th>Name</th><th>Email</th><th>Score</th><th>Tier</th><th>Date (PKT)</th><th>LinkedIn</th><th>Report</th></tr></thead>
           <tbody id="leadsTbody"></tbody>
         </table>
         <div id="emptyState" hidden>No leads yet.</div>
@@ -1649,8 +1650,18 @@ const DASHBOARD_HTML = `<!DOCTYPE html>
       tbody.innerHTML = '';
       $('emptyState').hidden = leads.length > 0;
 
-      leads.forEach(function (lead) {
+      leads.forEach(function (lead, leadIdx) {
         var tr = document.createElement('tr');
+
+        // ADDED 2026-09-22 -- serial number column so Tabish can see how
+        // many leads he has at a glance. Counts down from the list length
+        // since leads are ordered newest-first, so row 1's number is always
+        // the total count shown here (may be a filtered subset's count when
+        // the search box is active, not the grand total in the KPI card).
+        var tdSerial = document.createElement('td');
+        tdSerial.className = 'score-cell';
+        tdSerial.textContent = String(leads.length - leadIdx);
+        tr.appendChild(tdSerial);
 
         var tdName = document.createElement('td');
         tdName.textContent = lead.name || '-';
