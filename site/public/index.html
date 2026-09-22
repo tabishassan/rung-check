@@ -3,7 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Honest Read</title>
+<title>The Ladder Profile Audit</title>
+<meta name="description" content="Get a free, honest read on your LinkedIn profile. See exactly what's working, what isn't, and what to fix first -- across your photo, banner, headline, About, and proof.">
+<!-- Link-preview tags: this is what LinkedIn (and everywhere else) pulls the
+     title/description/image from when this link is shared -- e.g. dropped
+     into a Featured section, a post, or a DM. Without these, LinkedIn falls
+     back to a bare page title and no image. LOGO_URL matches the one used in
+     the report email so both surfaces stay in sync if it's ever swapped. -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rungcheck.tabishhassan.com/">
+<meta property="og:title" content="The Ladder Profile Audit -- Free LinkedIn Profile Score">
+<meta property="og:description" content="Get a free, honest read on your LinkedIn profile. See exactly what's working, what isn't, and what to fix first.">
+<meta property="og:image" content="https://rungcheck.tabishhassan.com/logo.png?v=3">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Ladder Profile Audit -- Free LinkedIn Profile Score">
+<meta name="twitter:description" content="Get a free, honest read on your LinkedIn profile. See exactly what's working, what isn't, and what to fix first.">
+<meta name="twitter:image" content="https://rungcheck.tabishhassan.com/logo.png?v=3">
 <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAGY0lEQVR4nO1aTYgdVRb+zrm3ql6/7vzYRpM4EaPGv/YHZRQiM7oZzDj4wyCIIOLfxoWiG8WNC8GdLhR0IwjuZNSFIoKSlUiYyeigMsxMVKLJzLQ/iYnp2N3vp+6957io6qTf6wr4quphtfYH1TxevXv6cOq75zvn1AXWsIY1/JpBVQ2c/+KevZ1/f/Dy4sfvvdvZ9+GsP/JNqMOxItiNZ/DEzDVnrbvmhpuT8y+77cDDN+yqarNyAC5546BSlAAS4OYOf9E/sO/Nzqf/eHvh77s/6H35nw4IgGoJzwhQRbTpLLvudzdd0b7s2lsndlx+u53eMkM2Rjh+9IfP7pzZUNX/ygG4+LXPA6AeBCYbW9gYduMZmNv9ytP/f+rex8EMiIzumDHQEHD6nx/Y+ZtHX/ibO/Yd4FOo73sQi184/tX+e68+r6r/tqoBMDOAGADUOZF+r6OqVtPeXGXbANQ75+aO9GR+LiVrp0DEYFvd7xy1GQIAMDNBYrZRDJCpxSYRsbWtwAbEzBARIgJC6Ndhnusw8nNAVXwdduplwDIoE4MNwIxSqYYNoACICx8SibhqHmYYTwCIAO/6kABIOVXUfJ2m3S5oKIBEUJG0qpvAOAJAxOod7PTmCyevvG4TjGHI6DpIzKzBh2T7zFXqHIiHtmtNOaD2ABAZq/0O2hf99v5znvrL/QCVE1vN/mjwkO4CiE08eL8ktYYwphxA0OBEfTp6ATBoBlDiXGqXfU8Q8Q3OAUCWvKgGlRlmD0EAMInWEoBVKoMEqUkGV2EANEsrjd8CAKDBQ1E+DxAYZAp8JEhoqgyegIKStiW25VVAA6TfK7xN4pspgwCgGjy3puzR15+/ZfGff91L1hrICC3hUg1w9oXbN9/3xIfqUhlWApEml8KqQjZC9/OPP1r85P0jZc347w8voqASJgIQfMO3gCooabeITVbXj1K35DMEbk/Fp/qJNrsQyqEiKiGrZ0byV7MhStG2UQAgqHPdOlxchTKYgaC1MGB1BoAI4l1zVeAEiAhEOHH99HVL1ykXkWi1PiPHWAOg3nlo1tGNhJDPAlxaRHPJbRcXCCNiLAEgsNVeB5vueOSl6Rvv2g82BiI/fSbAAFSFJ9ZtUe+wohsEUG7WvhLjYQAzq3i0zrlkFxm7K59tjWAg+71KgKYFD5oI6tNOHa6OcQsQNO14HUsvAEDRYAYsgYyt/uplGDk7fL+WSnB1yiAABVZBJThKA3QqZHI4NBID1DW4GwQAEIFsVJphS2lTVYFCyW+yCoAgzvfgese0wlyQBEI2mqQ4WY/lOU8BdWkzGaDiUzO5MV7Y+86z3z7/2BNgppFqgBzEhlSCnvane/5w5t2P73bHj/XYmtay/9RgBhABaXfezx2pnAPU9/tFZbS6BleCGYwBEcqfD7DQ4MGtyXV5Nhi4r9pkBixB9eRVci1FSTJYS+TB8O4XXgfkQeM4mcw+D20DrUFiMW4GgJZdJddGSRuqgyY0OzlSh4djDsCSho++BTRfx1HcVlUQ6SBbdXRlKcLYD0iQKZcEwQwNBEom1hdYh/qGToWJbSzdRbQv3fngec+9c61WOCtE0GCmt1wt3UUQ24EJsTY6B6jAtKfOtOtnbixD/5MgqE+HGcQAoME1+MUIAAQvGlwNT4l5RTME1NNoYawvRgARVH5KbKlV9L2GUQeNxRjXqzFQnHDUahc6PwpCZ744iUpoKANEhOKE068P7Fn46L0XQEQjj68IBIUSs13/+1ue4akNWxGcnDgypwr1vpkMUIjnZCLufvGvtw699OSrVe21r7r+oWTD9NY8n5zMBY1lAJBvgXiCjCnXDOUnxXliikzS2ggRQMEni0qFNjoAyN7caAhZTV8yACACmWhyUEopmxLVFIDmNkMAyESkxiYDzaSCoQqtSQabHYAoZjYmXlFMqQLhF82ArPWjKGawba3oBrMmq5ZmaIwBqO4g2YiJKR6YB+T5QYNvyHuBrCmRvH+FqnoQxWSjpLTNfOhDUctQPMHa7wqggsw2VMQ2px02lrMnlR2HI5fG6tM0zB//prJtFQ3dHw6ZpL2ZolYmgxKy44fBN0MGw/zcf913s3v7s1/ucbP7P+nP7j/oDv3vaHp4NpvalknW+Zr+wX2dAw//cVu8dfuGeNuObcnZF1yRbNuxM9p67vU1TcXXsIY1/MrxI9da/k9XNmZ4AAAAAElFTkSuQmCC">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap">
@@ -74,6 +89,12 @@
   .uz-l{font-size:.82rem;font-weight:600;}
   .uz-s{font-size:.7rem;color:var(--ink-faint);margin-top:2px;}
   .shot-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:9px;}
+  select.email-input{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%2355606A' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:34px;}
+  .info-btn{display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;border-radius:50%;border:1.5px solid var(--ink-faint);color:var(--ink-faint);background:transparent;font-size:.66rem;font-weight:700;line-height:1;cursor:pointer;padding:0;font-family:'Inter',sans-serif;flex-shrink:0;}
+  .info-btn:hover{border-color:var(--accent);color:var(--accent-dark);}
+  .shot-info-panel{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1rem;margin-bottom:.7rem;}
+  .shot-info-panel p{font-size:.8rem;color:var(--ink-soft);line-height:1.55;margin:0;}
+  .shot-info-panel .hint{margin-top:8px;font-style:italic;}
 
   .btn{width:100%;padding:13px;background:var(--accent);color:#04222C;border:none;border-radius:999px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:.92rem;cursor:pointer;margin-top:.4rem;transition:.15s;}
   .btn:hover{background:var(--accent-dark);color:#fff;}
@@ -98,15 +119,12 @@
   .rung-score{font-family:'Plus Jakarta Sans',sans-serif;font-size:3.6rem;font-weight:800;line-height:1;color:var(--accent);}
   .rung-den{font-size:1.1rem;color:var(--on-dark-soft);font-weight:600;}
   .rung-lbl{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--on-dark-soft);margin-top:2px;}
-  .rung-badge{display:inline-block;margin-top:12px;padding:6px 18px;border-radius:999px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:.85rem;background:var(--accent);color:#04222C;}
-  .ladder-track{display:flex;justify-content:center;gap:6px;margin-top:16px;}
-  .ladder-track span{font-size:.68rem;font-weight:700;padding:4px 9px;border-radius:999px;background:rgba(255,255,255,.08);color:var(--on-dark-soft);}
+  .lead-gap{font-size:.92rem;line-height:1.5;color:var(--on-dark);margin-top:12px;max-width:400px;margin-left:auto;margin-right:auto;}
 
   .tier-tease{margin:1.4rem 0;padding:1.1rem 1.15rem;background:var(--surface);border:1px solid var(--border);border-radius:14px;}
   .tier-tease-h{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:.7rem;display:flex;align-items:center;gap:6px;}
   .tier-tease-row{font-size:.85rem;color:var(--ink-soft);padding:5px 0;}
   .tier-tease-row b{color:var(--ink);font-weight:800;display:inline-block;min-width:96px;}
-  .ladder-track span.on{background:var(--accent);color:#04222C;}
 
   .pillar-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:9px;margin-bottom:1.2rem;}
   .pc{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:.85rem;}
@@ -115,6 +133,7 @@
   .pc-m{font-size:.78rem;color:var(--ink-soft);}
   .pc-bar{height:3px;background:var(--border);border-radius:99px;margin-top:6px;overflow:hidden;}
   .pc-fill{height:100%;background:var(--accent);border-radius:99px;}
+  .pc-status{font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin-top:5px;}
 
   .sec{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:1.1rem;margin-bottom:.75rem;}
   .sec-h{font-size:.88rem;font-weight:700;display:flex;justify-content:space-between;margin-bottom:.7rem;}
@@ -193,19 +212,24 @@
   <div id="s1" class="step active">
     <div class="tag">The Ladder Profile Audit</div>
     <h1 class="h">Find out how your profile actually reads</h1>
-    <p class="sub">Upload your LinkedIn profile PDF and a couple of screenshots. I'll score your reliability, readability, and resonance, then tell you exactly where you stand and what closes the gap.</p>
+    <p class="sub">Upload your LinkedIn profile PDF and at least 1 screenshot (2-3 gives a fuller picture). I'll score your photo, banner, headline, About section, and proof - then tell you exactly where you stand and what closes the gap.</p>
 
-    <button type="button" class="video-tease" onclick="openVideoModal()">
-      <span class="video-play"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
-      <span class="video-tease-copy">
-        <span class="video-tease-t" style="display:block;">Watch how it works</span>
-        <span class="video-tease-s" style="display:block;">Quick walkthrough</span>
-      </span>
-    </button>
+    <div class="field-group">
+      <label class="field-label" for="purpose">What's this audit for? <span style="color:var(--ink-faint);font-weight:400">(required)</span></label>
+      <select class="email-input" id="purpose">
+        <option value="" disabled selected>Choose one...</option>
+        <option value="Win new clients or customers">Win new clients or customers</option>
+        <option value="Get noticed by investors or partners">Get noticed by investors or partners</option>
+        <option value="Build authority as a go-to expert">Build authority as a go-to expert</option>
+        <option value="Land a new role or opportunity">Land a new role or opportunity</option>
+        <option value="Grow my visibility and network generally">Grow my visibility and network generally</option>
+      </select>
+    </div>
 
     <div class="field-group">
       <label class="field-label">LinkedIn profile PDF <span style="color:var(--ink-faint);font-weight:400">(required)</span></label>
-      <p class="hint" style="margin-bottom:7px">LinkedIn → Me → View Profile → More → Save to PDF</p>
+      <p class="hint" style="margin-bottom:2px"><b>On desktop:</b> LinkedIn &rarr; Me &rarr; View Profile &rarr; More &rarr; Save to PDF</p>
+      <p class="hint" style="margin-bottom:7px"><b>On mobile:</b> open your profile in your phone's browser (not the app) &rarr; turn on "Desktop site" in the browser menu &rarr; tap More &rarr; Save to PDF. Don't see that? Use your browser's Print button and choose Save as PDF instead.</p>
       <div class="upzone" id="z-pdf">
         <input type="file" accept=".pdf" onchange="handleFile(this,'pdf')">
         <div class="uz-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2.5h9l4 4v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-17a1 1 0 0 1 1-1z"/><path d="M15 2.5v4h4"/><circle cx="11.2" cy="12.3" r="1.7"/><path d="M8.3 17.3c.5-1.8 1.8-2.7 2.9-2.7s2.4.9 2.9 2.7"/></svg></div>
@@ -215,11 +239,36 @@
     </div>
 
     <div class="field-group">
-      <label class="field-label">Screenshots <span style="color:var(--ink-faint);font-weight:400">(recommended, for accurate visual scoring)</span></label>
+      <label class="field-label" style="display:flex;align-items:center;gap:6px;">1-3 screenshots of your profile <span style="color:var(--ink-faint);font-weight:400">(required)</span> <button type="button" class="info-btn" id="shotInfoBtn" onclick="toggleShotInfo()" aria-label="How to take these screenshots" aria-expanded="false">i</button></label>
+      <div class="shot-info-panel" id="shotInfoPanel" hidden>
+        <svg width="100%" height="150" viewBox="0 0 260 150" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:0 auto 10px;max-width:220px;">
+          <rect x="80" y="4" width="80" height="142" rx="14" stroke="var(--border)" stroke-width="2" fill="var(--bg)"/>
+          <rect x="88" y="16" width="64" height="32" rx="3" fill="var(--accent-soft)"/>
+          <circle cx="106" cy="32" r="8" fill="var(--accent)"/>
+          <rect x="88" y="56" width="64" height="14" rx="3" fill="var(--surface-2)"/>
+          <rect x="88" y="78" width="64" height="58" rx="3" fill="var(--surface-2)"/>
+          <line x1="6" y1="32" x2="80" y2="32" stroke="var(--border)" stroke-width="1.4" stroke-dasharray="3 3"/>
+          <text x="4" y="27" font-size="10" fill="var(--ink-soft)" font-family="Inter,sans-serif">banner + photo</text>
+          <line x1="6" y1="63" x2="80" y2="63" stroke="var(--border)" stroke-width="1.4" stroke-dasharray="3 3"/>
+          <text x="4" y="58" font-size="10" fill="var(--ink-soft)" font-family="Inter,sans-serif">headline</text>
+          <line x1="6" y1="107" x2="80" y2="107" stroke="var(--border)" stroke-width="1.4" stroke-dasharray="3 3"/>
+          <text x="4" y="102" font-size="10" fill="var(--ink-soft)" font-family="Inter,sans-serif">featured / about</text>
+        </svg>
+        <p>Open your profile in the LinkedIn app, and screenshot the very top - your banner and photo together. That alone is enough. If you want a fuller picture, add 1-2 more scrolling down (headline, then About/Featured).</p>
+        <p class="hint">Illustration only - not an actual example screenshot.</p>
+      </div>
+      <div class="upzone" id="z-shots">
+        <input type="file" accept="image/*" multiple onchange="handleShotsFile(this)">
+        <div class="uz-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="19" height="17" rx="1.5"/><path d="M2.5 15.5l4.3-4 3 2.8 4-4.3 6.7 5.8" opacity=".55"/><circle cx="8" cy="9.3" r="2.4"/></svg></div>
+        <div class="uz-l">Upload 1-3 screenshots</div>
+        <div class="uz-s">Scrolled from the top</div>
+      </div>
+
+      <p class="field-label" style="margin-top:1rem;">Optional extras <span style="color:var(--ink-faint);font-weight:400">(only if you have them - not required)</span></p>
       <div class="shot-grid">
         <div class="upzone" id="z-cover">
           <input type="file" accept="image/*" onchange="handleFile(this,'cover')">
-          <div class="uz-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="19" height="11" rx="1.5"/><path d="M2.5 11.5l4.3-4 3 2.8 4-4.3 6.7 5.8" opacity=".55"/><circle cx="8" cy="17.3" r="3.2"/></svg></div><div class="uz-l">Banner + photo</div><div class="uz-s">Header area</div>
+          <div class="uz-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="19" height="11" rx="1.5"/><path d="M2.5 11.5l4.3-4 3 2.8 4-4.3 6.7 5.8" opacity=".55"/><circle cx="8" cy="17.3" r="3.2"/></svg></div><div class="uz-l">Banner</div><div class="uz-s"></div>
         </div>
         <div class="upzone" id="z-photo">
           <input type="file" accept="image/*" onchange="handleFile(this,'photo')">
@@ -233,24 +282,24 @@
     </div>
 
     <div class="err" id="err"></div>
-    <button class="btn" onclick="startCheck()">Get My Honest Read →</button>
+    <button class="btn" onclick="startCheck()">Get My Profile Audit &rarr;</button>
     <p class="hint" style="text-align:center;margin-top:9px">Your files go straight to the analysis, nothing is stored after your report is generated.</p>
   </div>
 
   <!-- STEP 2: PROGRESS -->
   <div id="s2" class="step">
     <div class="tag">Reading your profile</div>
-    <h1 class="h">Placing you on the ladder…</h1>
-    <p class="sub">Scoring reliability, readability, and resonance.</p>
-    <div class="prog-lbl" id="prog-lbl">Reading your profile…</div>
+    <h1 class="h">Placing you on the ladder...</h1>
+    <p class="sub">Scoring your photo, banner, headline, About, and proof.</p>
+    <div class="prog-lbl" id="prog-lbl">Reading your profile...</div>
     <div class="prog-bg"><div class="prog-fill" id="prog-fill"></div></div>
     <div class="ps-list">
       <div class="ps" id="ps1"><span class="dot"></span>Reading profile PDF</div>
-      <div class="ps" id="ps2"><span class="dot"></span>Reading your visuals</div>
-      <div class="ps" id="ps3"><span class="dot"></span>Scoring reliability</div>
-      <div class="ps" id="ps4"><span class="dot"></span>Scoring readability</div>
-      <div class="ps" id="ps5"><span class="dot"></span>Scoring resonance</div>
-      <div class="ps" id="ps6"><span class="dot"></span>Placing you on the ladder</div>
+      <div class="ps" id="ps2"><span class="dot"></span>Reading your screenshots</div>
+      <div class="ps" id="ps3"><span class="dot"></span>Scoring your photo & banner</div>
+      <div class="ps" id="ps4"><span class="dot"></span>Scoring your headline & About</div>
+      <div class="ps" id="ps5"><span class="dot"></span>Scoring your proof & next step</div>
+      <div class="ps" id="ps6"><span class="dot"></span>Finding your band</div>
     </div>
   </div>
 
@@ -260,14 +309,14 @@
 
 <div class="video-modal-overlay" id="videoModalOverlay" onclick="closeVideoModal(event)">
   <div class="video-modal video-modal-wide">
-    <button class="video-modal-close" onclick="closeVideoModal(event)" type="button" aria-label="Close">✕</button>
+    <button class="video-modal-close" onclick="closeVideoModal(event)" type="button" aria-label="Close">&#10005;</button>
     <div id="videoModalEmbedWrap" class="video-modal-embed-wrap" style="display:none;">
       <iframe id="videoModalIframe" src="" title="How it works" loading="lazy" allow="clipboard-write; fullscreen" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
     <div id="videoModalPlaceholder" class="video-modal-placeholder">
       <div class="video-play"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
       <div style="font-weight:700;margin-bottom:4px;">Walkthrough video coming soon</div>
-      <div style="font-size:.8rem;color:var(--ink-faint);">Check back shortly — we're finishing the recording.</div>
+      <div style="font-size:.8rem;color:var(--ink-faint);">Check back shortly - we're finishing the recording.</div>
     </div>
   </div>
 </div>
@@ -280,8 +329,45 @@
   window.pdfjsLib = pdfjsLib;
 </script>
 <script>
-  const F = { pdf:null, cover:null, photo:null, featured:null };
-  const RUNGS = ['Invisible','Seen','Remembered','Unignorable'];
+  const F = { pdf:null, shots:[], cover:null, photo:null, featured:null };
+  const TOUCHPOINTS = [
+    { key:'photo', label:'Photo' },
+    { key:'banner', label:'Banner' },
+    { key:'headline', label:'Headline' },
+    { key:'about', label:'About' },
+    { key:'proofNextStep', label:'Proof & Next Step' }
+  ];
+  const BANDS = [
+    { min:0, max:40, label:'Overlooked' },
+    { min:41, max:65, label:'Emerging' },
+    { min:66, max:85, label:'Established' },
+    { min:86, max:100, label:'Magnetic' }
+  ];
+  function bandLabel(score){
+    const s = Number(score) || 0;
+    const b = BANDS.find(b => s >= b.min && s <= b.max);
+    return b ? b.label : BANDS[0].label;
+  }
+  function tpStatus(score){
+    const s = Number(score) || 0;
+    if(s >= 17) return 'Strong';
+    if(s >= 12) return 'Needs refinement';
+    if(s >= 7) return 'Opportunity';
+    return 'Weak';
+  }
+  function tpStatusColor(status){
+    if(status === 'Strong') return 'var(--good)';
+    if(status === 'Needs refinement') return 'var(--accent-dark)';
+    if(status === 'Opportunity') return 'var(--ink-faint)';
+    return 'var(--bad)';
+  }
+  function toggleShotInfo(){
+    const panel = document.getElementById('shotInfoPanel');
+    const btn = document.getElementById('shotInfoBtn');
+    if(!panel) return;
+    panel.hidden = !panel.hidden;
+    if(btn) btn.setAttribute('aria-expanded', String(!panel.hidden));
+  }
 
   // Fires a PostHog custom event if analytics is configured and loaded;
   // silently does nothing otherwise (blank key, blocked script, etc).
@@ -320,11 +406,16 @@
 
   function resetFlow(){
     track('reset_flow_used');
-    F.pdf = null; F.cover = null; F.photo = null; F.featured = null;
+    F.pdf = null; F.shots = []; F.cover = null; F.photo = null; F.featured = null;
     CURRENT_REPORT = null;
+    const purposeEl = document.getElementById('purpose');
+    if(purposeEl) purposeEl.value = '';
+    const infoPanel = document.getElementById('shotInfoPanel');
+    if(infoPanel) infoPanel.hidden = true;
     const zoneDefaults = {
       'z-pdf': { l:'Upload profile PDF', s:'PDF only' },
-      'z-cover': { l:'Banner + photo', s:'Header area' },
+      'z-shots': { l:'Upload 1-3 screenshots', s:'Scrolled from the top' },
+      'z-cover': { l:'Banner', s:'' },
       'z-photo': { l:'Profile photo', s:'Close-up' },
       'z-featured': { l:'Featured', s:'Full section' }
     };
@@ -352,8 +443,8 @@
 
   // This page is hosted on Cloudflare Pages (not Claude's Artifact link), so it's
   // free to call out to the Cloudflare Worker that holds the Groq key. The PDF is
-  // read entirely in the browser (via PDF.js) so only plain text — never the file
-  // itself — leaves the visitor's device.
+  // read entirely in the browser (via PDF.js) so only plain text - never the file
+  // itself - leaves the visitor's device.
   const PROXY_URL = 'https://rung-check-api.tabishcreates.workers.dev/';
   const PROXY_SECRET = 'Xjeueucdjc93959201';
   const GALLERY_URL = 'https://quilt-cheque-ddb.notion.site/The-Ladder-Profile-Gallery-by-Tabish-Hassan-35216aea701e80a78cfae15c6ef9abb8';
@@ -377,8 +468,25 @@
     const z=document.getElementById('z-'+key);
     z.classList.add('done');
     const n=inp.files[0].name;
-    z.querySelector('.uz-l').textContent = n.length>16 ? n.slice(0,14)+'…' : n;
-    z.querySelector('.uz-s').textContent='Uploaded ✓';
+    z.querySelector('.uz-l').textContent = n.length>16 ? n.slice(0,14)+'...' : n;
+    z.querySelector('.uz-s').textContent='Uploaded ' + String.fromCharCode(10003);
+  }
+  function handleShotsFile(inp){
+    const files = Array.from(inp.files || []);
+    F.shots = files;
+    const z = document.getElementById('z-shots');
+    if(!z) return;
+    if(files.length){
+      // FIXED 2026-09-19 -- 1 screenshot is a genuinely sufficient submission
+      // now (see startCheck's validation), so this no longer nags for a 2nd.
+      z.classList.add('done');
+      z.querySelector('.uz-l').textContent = files.length + ' screenshot' + (files.length===1?'':'s') + ' selected';
+      z.querySelector('.uz-s').textContent = 'Uploaded ' + String.fromCharCode(10003);
+    } else {
+      z.classList.remove('done');
+      z.querySelector('.uz-l').textContent = 'Upload 1-3 screenshots';
+      z.querySelector('.uz-s').textContent = 'Scrolled from the top';
+    }
   }
   function toB64(file){
     return new Promise((res,rej)=>{const r=new FileReader();r.onload=()=>res(r.result.split(',')[1]);r.onerror=rej;r.readAsDataURL(file);});
@@ -393,55 +501,131 @@
       throw e;
     }
   }
-  async function analyzeVisuals(){
-    // Sends the actual banner/photo/featured screenshots to a vision-capable model
-    // (the main scoring model is text-only) and returns a compact, objective JSON
-    // description that gets folded into the scoring prompt as real evidence.
-    const shots=[];
-    if(F.photo) shots.push({label:'LinkedIn profile photo', file:F.photo});
-    if(F.cover) shots.push({label:'LinkedIn banner/cover image', file:F.cover});
-    if(F.featured) shots.push({label:'LinkedIn featured section screenshot', file:F.featured});
-    if(!shots.length) return null;
-
-    const content=[{type:'text', text:
-      'You will be shown one or more LinkedIn profile screenshots: ' + shots.map(s=>s.label).join(', ') + '. ' +
-      'Describe each objectively and concisely for use as scoring evidence. Return ONLY valid JSON, no preamble, no markdown fences, exact structure:\n' +
-      '{"photo":{"present":boolean,"approachable":boolean,"branded":boolean,"note":"one line, objective"},' +
-      '"banner":{"present":boolean,"hasOffer":boolean,"aesthetic":boolean,"socialProof":boolean,"cleanLayout":boolean,"hasCTA":boolean,"note":"one line, objective"},' +
-      '"featured":{"present":boolean,"visuallyCohesive":boolean,"note":"one line, objective"}}\n' +
-      'Set a field\'s booleans to false and explain in "note" if that image was not provided. Do not invent detail you cannot see.'
-    }];
-    for(const s of shots){
-      const b64=await toB64(s.file);
-      content.push({type:'image_url', image_url:{url:'data:'+(s.file.type||'image/png')+';base64,'+b64}});
-    }
-
-    try{
-      const resp=await fetch(PROXY_URL,{
-        method:'POST',
-        headers:{'Content-Type':'application/json','X-Proxy-Secret':PROXY_SECRET},
-        body:JSON.stringify({
-          messages:[{role:'user', content}],
-          response_format:{type:'json_object'},
-          max_completion_tokens:700,
-          temperature:0.2
-        })
-      });
-      const data=await resp.json();
-      if(data.error) throw new Error(data.error.message||'vision API error');
+  // FIXED 2026-09-19 -- this used to bundle up to 3 screenshots into ONE vision
+  // call. That tripped a Groq limit the account's Limits page never showed:
+  // qwen/qwen3.8-27b is capped at 1000 OUTPUT tokens/minute, TOTAL, shared
+  // across every check anyone runs (not per request -- a rolling account-wide
+  // budget). Confirmed live: a 3-image bundled call at max_completion_tokens
+  // 1500 hit that ceiling directly ("Request too large ... Requested 1091");
+  // even a single-image call hit it on a second attempt once a prior call had
+  // used part of the minute's budget. Cutting the token budget to dodge the
+  // ceiling isn't safe either -- at 1000 tokens, describing all 3 screenshots
+  // in one go truncated into invalid JSON (the same json_validate_failed shape
+  // fixed elsewhere tonight, just caused by a tight budget instead of
+  // reasoning_effort). There's no single number that's safe for both cases
+  // with one bundled call.
+  //
+  // The fix: one Groq call per image instead of one call for all of them. A
+  // single concise description comfortably fits well under the 1000-token
+  // ceiling (verified live), so this holds up whether someone uploads just
+  // the one header screenshot we now ask for, or the full 2-3. Calls run
+  // sequentially, not in parallel, so each one's real usage registers with
+  // Groq before the next is sent -- firing them all at once would let them
+  // race each other for the same shared per-minute budget.
+  //
+  // A per-image failure (after its own retries) no longer takes down the
+  // whole analysis: whatever images DID succeed still get used as real
+  // evidence, and the failed one is flagged distinctly as "could not be
+  // reviewed" rather than silently dropped or conflated with "wasn't
+  // uploaded" (see the visualsNote branches in startCheck below -- that
+  // conflation was the actual cause of a report saying "no photo/banner was
+  // provided" for a profile whose screenshots were genuinely uploaded).
+  async function analyzeSingleImage(file, index, total){
+    const b64 = await toB64(file);
+    const content = [
+      {type:'text', text:
+        'You are shown ONE screenshot (image ' + (index+1) + ' of ' + total + ' from a LinkedIn profile, scrolled from the top). ' +
+        'Write one concise, objective, concrete paragraph (2-4 sentences) describing everything in it useful as scoring evidence -- profile photo, banner, headline, featured section, activity, anything else visible. ' +
+        'Do not invent detail you cannot see. Return ONLY valid JSON, no preamble, no markdown fences, exact structure:\n' +
+        '{"description":"string, everything visible in this screenshot, objective and concrete"}'
+      },
+      {type:'image_url', image_url:{url:'data:'+(file.type||'image/png')+';base64,'+b64}}
+    ];
+    const MAX_ATTEMPTS = 3;
+    for(let attempt=0; attempt<MAX_ATTEMPTS; attempt++){
+      let resp;
+      try{
+        resp = await fetch(PROXY_URL,{
+          method:'POST',
+          headers:{'Content-Type':'application/json','X-Proxy-Secret':PROXY_SECRET},
+          body:JSON.stringify({
+            messages:[{role:'user', content}],
+            response_format:{type:'json_object'},
+            // One image per call now -- see the note above analyzeSingleImage.
+            // The Worker enforces 900 as a hard ceiling for vision calls
+            // regardless of what's sent here; 500 leaves real headroom under
+            // that so a single request essentially never trips the 1000/min
+            // cap on its own.
+            max_completion_tokens:500,
+            temperature:0.2
+          })
+        });
+      }catch(e){
+        // Network hiccup, not a Groq response at all -- worth a patient retry,
+        // same as a 429, rather than failing this image immediately.
+        if(attempt < MAX_ATTEMPTS-1){ await new Promise(r=>setTimeout(r, 4000+attempt*4000)); continue; }
+        return { description:null, error:'network error: ' + ((e&&e.message)||'unknown') };
+      }
+      if(resp.status === 429){
+        // FIXED 2026-09-19 -- checking the real HTTP status instead of matching
+        // specific wording in the error text. Groq phrases this two different
+        // ways for the exact same condition ("Rate limit reached..." and
+        // "Request too large..."), and only one of them contains the words
+        // "rate limit" -- text-matching was silently missing the other one.
+        if(attempt < MAX_ATTEMPTS-1){
+          let waitMs = 15000 + attempt*8000; // a per-minute cap needs real time to clear, not a few seconds
+          try{
+            const t = await resp.clone().text();
+            const m = t.match(/try again in ([\d.]+)s/i);
+            if(m) waitMs = Math.max(waitMs, Math.ceil(parseFloat(m[1])*1000)+500);
+          }catch(e){}
+          await new Promise(r=>setTimeout(r, waitMs));
+          continue;
+        }
+        return { description:null, error:'rate limited' };
+      }
+      let data;
+      try{ data = await resp.json(); }
+      catch(e){ return { description:null, error:'invalid response from server' }; }
+      if(data.error) return { description:null, error:data.error.message||'vision API error' };
       const choice=data.choices && data.choices[0];
-      const raw=choice && choice.message && choice.message.content || '';
-      return parseJsonLoose(raw);
-    }catch(e){
-      return { error: e.message || 'visual analysis failed' };
+      const raw=(choice && choice.message && choice.message.content) || '';
+      try{
+        const parsed = parseJsonLoose(raw);
+        return { description: parsed.description || null };
+      }catch(e){
+        return { description:null, error:'could not parse description' };
+      }
     }
+    return { description:null, error:'visual analysis failed' };
+  }
+
+  async function analyzeVisuals(){
+    // Up to 3 screenshots total: the required general upload(s) first (most
+    // representative of the actual profile), then any optional extra crop
+    // slots, taken in that order if there are more than 3 combined.
+    const combined = [...F.shots, F.cover, F.photo, F.featured].filter(Boolean).slice(0,3);
+    if(!combined.length) return null;
+
+    const results = [];
+    for(let i=0;i<combined.length;i++){
+      results.push(await analyzeSingleImage(combined[i], i, combined.length));
+    }
+    const anySucceeded = results.some(r => r.description);
+    if(!anySucceeded){
+      return { error: results.map(r=>r.error).filter(Boolean)[0] || 'visual analysis failed' };
+    }
+    return {
+      images: results.map(r => r.description ? {description:r.description} : {description:null, unavailable:true}),
+      failedCount: results.filter(r => !r.description).length
+    };
   }
   function setStep(id){['s1','s2','s3'].forEach(s=>document.getElementById(s).classList.remove('active'));document.getElementById(id).classList.add('active');}
 
   function advance(idx){
     const ids=['ps1','ps2','ps3','ps4','ps5','ps6'];
     const pcts=[15,30,50,65,80,95];
-    const labels=['Reading your profile PDF…','Reading your visuals…','Scoring reliability…','Scoring readability…','Scoring resonance…','Placing you on the ladder…'];
+    const labels=['Reading your profile PDF...','Reading your screenshots...','Scoring your photo & banner...','Scoring your headline & About...','Scoring your proof & next step...','Finding your band...'];
     if(idx>0){document.getElementById(ids[idx-1]).classList.remove('active');document.getElementById(ids[idx-1]).classList.add('done');}
     if(idx<ids.length){document.getElementById(ids[idx]).classList.add('active');document.getElementById('prog-fill').style.width=pcts[idx]+'%';document.getElementById('prog-lbl').textContent=labels[idx];}
   }
@@ -449,6 +633,17 @@
   async function startCheck(){
     const err=document.getElementById('err'); err.style.display='none';
     if(!F.pdf){ err.textContent='Please upload your LinkedIn profile PDF to continue.'; err.style.display='block'; return; }
+    // FIXED 2026-09-19 -- was requiring 2 screenshots minimum. The header shot
+    // alone (photo + banner) plus the required PDF (which covers headline,
+    // About, and Experience as text) is enough for a real audit -- 2-3
+    // screenshots add detail but were never load-bearing for every touchpoint.
+    // This also happens to keep typical usage on the safe side of Groq's
+    // vision rate limit (see analyzeVisuals) since fewer images means less
+    // output-token budget used per check.
+    if(!F.shots || F.shots.length < 1){ err.textContent='Please upload at least 1 screenshot of your profile - ideally the very top, showing your photo and banner.'; err.style.display='block'; return; }
+    const purposeEl = document.getElementById('purpose');
+    if(!purposeEl || !purposeEl.value){ err.textContent="Please choose what this audit is for."; err.style.display='block'; return; }
+    const purposeLabel = purposeEl.value;
 
     setStep('s2');
     track('check_started');
@@ -462,70 +657,105 @@
       }
       const visualAnalysis = await analyzeVisuals();
       let visualsNote;
+      // FIXED 2026-09-19 -- these three branches used to collapse into two:
+      // "no screenshots at all" and "could not be analyzed" were kept
+      // distinct, but a real audit hit a case in between (screenshots WERE
+      // uploaded, analysis genuinely failed due to a Groq rate limit) and the
+      // model still wrote "no photo was provided" -- because the rubric's own
+      // "edge case" instruction (below) only distinguished those same two
+      // states and let the model conflate a technical failure with a genuine
+      // absence. Now analyzeVisuals can also return a PARTIAL result (some
+      // images described, others individually failed), and every branch here
+      // says explicitly whether an absence is real or just a review failure,
+      // so the model has no ambiguity to resolve on its own.
       if(!visualAnalysis){
-        visualsNote = 'No screenshots were provided — score the visual-dependent criteria (photo branding, banner checklist, visual cohesion) conservatively and say so explicitly.';
+        visualsNote = 'No screenshots were provided at all - this is a genuine absence. Score the visual-dependent touchpoints (Photo, Banner) conservatively and say plainly that no photo/banner was provided.';
       } else if(visualAnalysis.error){
-        visualsNote = 'The user attached banner/photo/featured screenshots, but they could not be analyzed this time (' + visualAnalysis.error + ') — score the visual-dependent criteria conservatively and say visuals could not be reviewed, rather than inventing detail.';
+        visualsNote = 'The user DID attach screenshots, but none of them could be reviewed this time due to a technical issue on our end (' + visualAnalysis.error + '). This is NOT the same as nothing being uploaded -- do not say a photo or banner "was not provided." Say plainly that the visuals could not be reviewed this time due to a technical issue, and score the visual-dependent touchpoints (Photo, Banner) conservatively without inventing detail.';
       } else {
-        visualsNote = 'The user attached banner/photo/featured screenshots. Here is an objective visual analysis already performed on those actual images — treat this as real evidence for the photo, banner, and visual-cohesion criteria in Reliability, Readability, and Resonance (do not say visuals could not be reviewed):\n' + JSON.stringify(visualAnalysis);
+        const imgs = Array.isArray(visualAnalysis.images) ? visualAnalysis.images : [];
+        const usable = imgs.filter(im => im.description);
+        const failedCount = visualAnalysis.failedCount || 0;
+        visualsNote = 'The user attached ' + imgs.length + ' screenshot(s) of their LinkedIn profile. Here is an objective description already performed on ' + (failedCount ? 'the ones that could be reviewed' : 'those actual images') + ' - treat this as real evidence for the Photo and Banner touchpoints (and anything else it confirms, like how the headline or About section actually appears):\n' + JSON.stringify(usable.map(im=>im.description));
+        if(failedCount){
+          visualsNote += '\n\n' + failedCount + ' of the ' + imgs.length + ' screenshot(s) attached could NOT be reviewed this time due to a technical issue on our end -- this is NOT the same as nothing being uploaded. Do not say a photo or banner "was not provided" on the strength of this alone. If a touchpoint isn\'t covered by any of the screenshots that DID get reviewed either, say plainly that it could not be fully reviewed this time rather than that it was never provided.';
+        }
       }
+      const purposeNote = 'The person said this audit is for: ' + purposeLabel + '. Weight the Proof & Next Step touchpoint\'s "move" and the recommended-tier reasoning toward that goal specifically.';
 
-      const systemPrompt = `You are The Honest Read for The Ladder, a LinkedIn profile system built around three rungs: Get Seen, Be Remembered, Stay Unignorable. Analyse the LinkedIn profile text below, extracted from the person's PDF export.
+      const systemPrompt = `You are The Ladder Profile Audit, a LinkedIn profile system built around three tiers: Seen, Remembered, Unignorable. Analyse the LinkedIn profile text below, extracted from the person's PDF export.
 
-## SCORING FRAMEWORK
+## SCORING FRAMEWORK - 5 touchpoints, each scored 0-20, summing to 100 total
 
-### Pillar 1: Reliability (max 35)
-Does the experience section tell a coherent, credible story? Notable achievements, metrics, or proof? Does the photo read as friendly and approachable rather than aggressive or overly stern, and does it look visually branded into the person's own colors/theme (consistent with banner/featured) rather than a disconnected snapshot? Does the featured section reinforce credibility?
-35-30: strong narrative with proof points, and a photo that reads as approachable and on-brand. 29-22: solid but missing proof, narrative clarity, or a properly branded photo. 21-15: vague experience, no metrics. 14-0: generic, no differentiation.
+### Photo (max 20)
+Does the profile photo read as warm and approachable rather than aggressive, overly stern, or a random candid crop? Is it a clear, well-lit, close-up headshot? Does it look visually coordinated with the banner and featured section (similar tone, color palette, overall look) rather than a disconnected snapshot dropped onto an unrelated background?
+18-20: warm, professional, and clearly coordinated with the rest of the profile's look. 13-17: a solid photo that isn't clearly coordinated with the banner/featured section, or coordinated but not especially approachable. 7-12: present but low quality, poorly cropped, or visually clashing with the rest of the profile. 0-6: no real photo, or one that actively undermines credibility (group shot, logo, very low resolution).
+Most audits will only have the header screenshot (photo + banner together), not a separate Featured-section screenshot. If no Featured section was part of what you were shown, judge the "coordinated" criterion against the photo and banner alone -- never lower this score for lacking evidence of Featured-section coordination you were never given.
 
-### Pillar 2: Readability (max 35)
-Does the headline follow a clear "I [help] [audience] [achieve] [result]" structure, with the actual value proposition front-loaded in the first ~45 characters (that's roughly all that shows in the LinkedIn feed before it gets cut off)? Does the banner hit the 5-point checklist: a clear offer, visual aesthetics, social proof, a clean/uncluttered layout, and a CTA? Would a stranger know within seconds who this person helps and how (people spend roughly 15 seconds on a profile and 7 seconds on a banner, so front-loading matters)?
-35-30: sharp, front-loaded headline plus a banner hitting all 5 checklist points. 29-22: good but missing one or two elements. 21-15: generic, reads like a job title, value prop buried past the fold. 14-0: no positioning at all.
+### Banner (max 20)
+Checklist: a clear offer or value statement, visual polish, some form of social proof (numbers, logos, a quote), a clean uncluttered layout, and a call to action. Also: does the banner look visually coordinated with the photo and featured section (matching colors or theme) rather than a generic stock image?
+18-20: hits nearly the whole checklist and is visually coordinated with the rest of the profile. 13-17: hits some of the checklist. 7-12: generic or stock banner, no offer or call to action. 0-6: no custom banner, or LinkedIn's default background.
+Same as above: if no Featured section was part of what you were shown, judge coordination against the photo alone -- never lower this score for lacking evidence you were never given.
 
-### Pillar 3: Resonance (max 30)
-Judge this primarily from the TEXT you can actually see: do the headline, About section, experience descriptions, and featured-section titles read as one consistent story about the same person? Specifically check the About section for a PAS structure — Problem (names the reader's problem), Agitate (why it matters/costs them), Solution (how this person solves it), CTA (a clear next step) — written for the audience, not just a list of the profile owner's own credentials. Only comment on photo/banner/visual cohesion if screenshots were actually provided below — if they weren't, say plainly that visual cohesion couldn't be assessed rather than inventing a visual critique.
-30-26: highly cohesive, clear PAS structure throughout. 25-20: professional with rough edges, About section partially audience-focused. 19-13: inconsistent, self-centered About section, some sections let the rest down. 12-0: no visible system.
+### Headline (max 20)
+Do not grade every headline against one single template. Judge it against whichever recognizable pattern the person is actually going for, then apply the same underlying test to all of them. Common strong patterns, any of which can score well: Value Proposition ("[Title] | Helping [audience] achieve [result] through [method]"), Authority & Proof (leads with a notable company, a metric, or a "Ex-[known company]" credential), Keyword Stack (role plus core skills, built to be found in search rather than to persuade), Mission-Driven ("[Title] | On a mission to [goal] | [focus area]"), Audience Identifier ("I write about [topics] for [audience] | [Title]"). Whichever pattern is being used: is the actual value proposition or hook front-loaded in roughly the first 40-50 characters (what shows before LinkedIn cuts it off in feed and search results)? Would a stranger know within a few seconds who this person is or what they're known for? A headline that clearly isn't chasing a formulaic pitch (a Distinctive-Voice or personality-led headline, for instance) should be judged on whether it's memorable and front-loaded, not marked down for lacking a sales structure it was never trying to have.
+18-20: clearly executes a recognizable pattern (or a deliberate distinctive-voice choice) well, sharp and front-loaded. 13-17: recognizable pattern but the payoff is buried past the first line, or vague on audience/value. 7-12: reads like a plain job title with no positioning and doesn't fit any recognizable pattern. 0-6: no real headline beyond the default title, or actively confusing.
 
-Edge cases: no screenshots, score narrative resonance only and say explicitly that visuals weren't reviewed — never write a generic visual critique when no image was provided. No About section, cap Resonance at 20 and note the gap. Be direct and give every gap a concrete one-line fix.
+### About (max 20)
+The first 2-3 lines matter most - that's all a reader sees before "see more" truncates it, so the hook has to land immediately. Beyond that, does the About section speak to the reader's problem or situation (why it matters, how this person helps) rather than reading as a list of the profile owner's own credentials, and does it end with a clear next step? Real proof (a result, a number, a named outcome) belongs here too, shown rather than just claimed. Scannable formatting (short paragraphs, line breaks) is a plus but never outweighs a weak hook or a missing next step.
+18-20: strong opening hook, clearly written for the reader, includes real proof, ends with a clear next step. 13-17: partially reader-focused but drifts into a resume-style list, weak opening hook, or missing a clear next step. 7-12: mostly a list of credentials, little focus on the reader, no real proof shown. 0-6: no About section, or a couple of throwaway lines.
 
-## EVIDENCE RULE (applies to every pillar)
-Every entry in every "working" array, and every "gap" in every "missing" array, must reference something specific and real from the profile text below — a phrase, a number, a named section, an actual quote. Never write a critique generic enough that it could apply to any profile without reading it. If you can't point to specific evidence for a point, don't make the point.
+### Proof & Next Step (max 20)
+Do the Experience and Featured sections back up the person's claims with concrete achievements, metrics, or named results - rather than just job titles and duties? Is it obvious what a genuinely interested reader should do next (message, book a call, visit a link)?
+18-20: concrete, specific proof points plus an obvious next step. 13-17: some proof but vague, or proof present with no clear next step. 7-12: mostly duties and responsibilities, no metrics, no next step. 0-6: no evidence of results anywhere, no path to act.
 
-## AFFIRMATION RULE
-Regardless of how low the overall score is, every pillar's "working" array must contain at least one specific, real strength — never leave "working" empty. Someone with a rough profile still did something right; find it and name it concretely.
+Edge case: if a screenshot-dependent detail (Photo, Banner) genuinely was not provided (no screenshots at all), say so plainly in that touchpoint's "observation" rather than inventing a visual critique. This is a DIFFERENT situation from a screenshot that was uploaded but could not be reviewed due to a technical issue -- the notes above will tell you plainly which situation you're in. Never phrase a technical review failure as if the element "was not provided" -- that is factually inaccurate to someone who genuinely did upload it, and misleading about what's actually missing from their profile.
 
-## RUNG PLACEMENT
-Add the three pillar scores for a total out of 100, then place the person on exactly one rung:
-0-40: Invisible. 41-65: Seen. 66-85: Remembered. 86-100: Unignorable.
+## EVIDENCE RULE (applies to every touchpoint)
+Never state a number, date, statistic, follower count, or any other specific fact that is not literally present in the profile text below or in the visual-analysis notes provided. If there is genuine doubt about whether something is true, leave it out rather than guess. Every "observation" must point to something real and specific you can actually see - never a generic statement that could apply to any profile without reading it.
 
-## RECOMMENDATION
-Based on the rung, recommend exactly one Ladder tier as the next step: someone on Invisible or Seen should be pointed to the REMEMBERED tier (full profile rebuild). Someone on Remembered should be pointed to the UNIGNORABLE tier (profile plus content). Someone already Unignorable gets a short congratulatory note instead of a pitch.
+## LINKEDIN URL (for internal use only -- never shown to the person)
+LinkedIn's PDF export usually prints the person's own public profile URL somewhere in the text (for example a line like "linkedin.com/in/some-handle" or "www.linkedin.com/in/some-handle"). If a URL matching that pattern is literally present in the profile text below, copy it out exactly as written into the "linkedinUrl" field, normalized to start with "https://www.linkedin.com/in/". If no such URL literally appears in the text, set "linkedinUrl" to null -- never guess one from the person's name or infer one that isn't literally printed in the text. This field is stored for Tabish's own outreach list and is never displayed back to the person who ran the audit.
+
+## PLAIN-LANGUAGE RULE (a separate rule from the evidence rule above - read it on its own)
+The words "touchpoint," "pillar," "PAS," "Problem-Agitate-Solution," "the 5-point checklist," "front-loading," "Value Proposition Formula," "Authority & Proof Formula," "Keyword Stack Formula," "Mission-Driven Formula," "Audience Identifier Formula," "distinctive-voice," or any other internal framework, rubric, formula name, or methodology name used to build this scoring system must NEVER appear in "observation", "gap", "move", or "leadGap". Those fields are read by a real person evaluating their own LinkedIn profile - describe what's true and what to do in plain, everyday language only. You may reason using these frameworks internally, but translate everything you write into plain language before outputting it.
+
+## RECOMMENDED TIER
+Look at which touchpoints have a real "gap" (not null). Do not use a numeric score threshold to pick the tier - use the pattern of where the gaps actually are, and how minor or substantial they are:
+- First, decide if each gap is MINOR (a polish tweak - tightening pacing, adding one more data point or example, a small formatting fix - the element is fundamentally working) or SUBSTANTIAL (something structurally missing or actually broken - no real photo, no CTA, no proof at all, a headline with no positioning, the wrong pattern entirely).
+- If there are two or fewer gaps total and EVERY one of them is minor: recommend "none" - a short congratulatory reason that can still name the one or two small things worth polishing, without pitching a tier for them.
+- Otherwise, route by where the gaps are: gaps only in Photo and/or Banner (a first-impression, visual problem): recommend "Seen" - the tier that fixes how the profile looks in the first few seconds. Gaps only in Headline, About, and/or Proof & Next Step (a positioning and story problem, not a visual one): recommend "Remembered" - the tier that rebuilds the narrative and messaging. Gaps span both the visual group and the positioning group, or three or more touchpoints have a gap: recommend "Unignorable" - the tier that rebuilds the full profile plus ongoing content.
+Write a one-line "reason" grounded in which specific touchpoints had gaps (for example: "your photo and banner don't match, so people bounce before they ever read your headline") - never invent a numeric threshold in the reason itself.
+
+${purposeNote}
 
 ## OUTPUT
 Return ONLY valid JSON, no preamble, no markdown fences. Exact structure:
 {
   "name": "string (full name from profile)",
-  "totalScore": number,
-  "scores": {"reliability": number, "readability": number, "resonance": number},
-  "rung": "one of: Invisible | Seen | Remembered | Unignorable",
-  "pillars": {
-    "reliability": {"working": ["string","string"], "missing": [{"gap":"string","fix":"string"},{"gap":"string","fix":"string"}]},
-    "readability": {"headline":"string (exact headline text)", "readabilityTest":"pass or fail", "working": ["string"], "missing": [{"gap":"string","fix":"string"},{"gap":"string","fix":"string"}]},
-    "resonance": {"working": ["string"], "missing": [{"gap":"string","fix":"string"},{"gap":"string","fix":"string"}]}
+  "totalScore": number (sum of the 5 touchpoint scores, 0-100),
+  "leadGap": "string, ONE plain-language sentence - the single biggest specific gap across all 5 touchpoints, written as its own clear sentence, not copied verbatim from a touchpoint's gap",
+  "touchpoints": {
+    "photo": {"score": number (0-20), "observation": "string, specific and concrete", "gap": "string or null", "move": "string"},
+    "banner": {"score": number (0-20), "observation": "string, specific and concrete", "gap": "string or null", "move": "string"},
+    "headline": {"score": number (0-20), "observation": "string, specific and concrete", "gap": "string or null", "move": "string"},
+    "about": {"score": number (0-20), "observation": "string, specific and concrete", "gap": "string or null", "move": "string"},
+    "proofNextStep": {"score": number (0-20), "observation": "string, specific and concrete", "gap": "string or null", "move": "string"}
   },
-  "top3": [
-    {"title":"string","what":"string, quote specific text if useful","why":"string, one line","how":"string, concrete next action"},
-    {"title":"string","what":"string","why":"string","how":"string"},
-    {"title":"string","what":"string","why":"string","how":"string"}
-  ],
-  "recommendedTier": {"tier":"REMEMBERED or UNIGNORABLE or none", "reason":"one line explaining why this tier closes their specific gap"}
+  "recommendedTier": {"tier": "Seen or Remembered or Unignorable or none", "reason": "one line, grounded in which touchpoints had gaps"},
+  "linkedinUrl": "string, the person's own linkedin.com/in/... URL if literally present in the profile text, otherwise null"
 }`;
 
       // The model occasionally fails to produce valid JSON on a single attempt
       // (a Groq JSON-mode hiccup, not a problem with the user's files) -- retry
-      // once automatically before surfacing an error.
-      let a, lastErr;
-      for(let attempt=0; attempt<2 && !a; attempt++){
+      // automatically before surfacing an error. The Worker itself already
+      // absorbs short rate-limit cooldowns server-side, so by the time a 429
+      // reaches here it's usually because Groq's suggested wait was too long
+      // for the Worker to sit on -- this loop is the backstop for that case,
+      // with up to 2 waited retries (3 attempts total) instead of just 1.
+      const MAX_ATTEMPTS = 3;
+      let a, lastErr, lastWasRateLimit=false;
+      for(let attempt=0; attempt<MAX_ATTEMPTS && !a; attempt++){
         try{
           const resp=await fetch(PROXY_URL,{
             method:'POST',
@@ -536,13 +766,19 @@ Return ONLY valid JSON, no preamble, no markdown fences. Exact structure:
                 {role:'user', content: `LINKEDIN PROFILE TEXT (extracted from PDF export):\n\n${profileText.slice(0,6000)}\n\n${visualsNote}`}
               ],
               response_format:{type:'json_object'},
-              max_completion_tokens:2500,
+              // Raised from 2500 to the Worker's own hard cap (4000) for extra
+              // headroom -- but the actual fix for the json_validate_failed
+              // failures this call was hitting every time is reasoning_effort
+              // now being 'low' server-side, not this number (see index.js;
+              // raising this alone, tested live with reasoning_effort still
+              // 'high', did not fix it).
+              max_completion_tokens:4000,
               temperature:0.4
             })
           });
 
           const data=await resp.json();
-          if(data.error) throw new Error(data.error.message||'API error');
+          if(data.error){ const err=new Error(data.error.message||'API error'); err.status=resp.status; throw err; }
 
           const choice=data.choices && data.choices[0];
           const raw=(choice && choice.message && choice.message.content || '').trim();
@@ -551,6 +787,34 @@ Return ONLY valid JSON, no preamble, no markdown fences. Exact structure:
         }catch(e){
           lastErr=e;
           a=null;
+          // FIXED 2026-09-19 -- was matching /rate limit/i against Groq's error
+          // text, which turned out to be unreliable: Groq phrases a 429 two
+          // different ways for the same underlying condition, and only one of
+          // them contains the words "rate limit" (confirmed live -- see
+          // rung-check-system-doc-v2.md section 11). Checking the real HTTP
+          // status catches both, and anything else Groq might phrase in the
+          // future.
+          lastWasRateLimit = (e && e.status === 429);
+          if(lastWasRateLimit && attempt < MAX_ATTEMPTS - 1){
+            const msg = (e && e.message) || '';
+            const waitMatch = msg.match(/try again in ([\d.]+)s/i);
+            // Each subsequent retry waits a bit longer than the last, in case
+            // Groq's own suggested wait was itself an underestimate -- and a
+            // per-minute-style cap (no parseable wait at all) gets a patient
+            // default, not a short one that can't possibly clear it.
+            const baseWaitMs = waitMatch ? Math.ceil(parseFloat(waitMatch[1])*1000)+500 : 15000;
+            const waitMs = baseWaitMs + attempt*8000;
+            await new Promise(r=>setTimeout(r, waitMs));
+          } else if(!lastWasRateLimit && attempt < MAX_ATTEMPTS - 1){
+            // ADDED 2026-09-19 -- a non-rate-limit failure (empty response, a
+            // JSON-mode hiccup) used to retry instantly, up to 3x back-to-back
+            // with no pause at all. That's fine for a one-off glitch, but if
+            // the real cause is something load-related that isn't surfacing
+            // as a 429, hammering it 3 times immediately only makes it worse.
+            // A short flat pause costs almost nothing on the common case (a
+            // rare one-off hiccup) and gives a busy moment a beat to clear.
+            await new Promise(r=>setTimeout(r, 2000));
+          }
         }
       }
 
@@ -561,28 +825,63 @@ Return ONLY valid JSON, no preamble, no markdown fences. Exact structure:
 
       if(!a) throw lastErr || new Error('Could not read the result. Please try again.');
 
+      a.purpose = purposeLabel;
       renderReport(a);
     }catch(e){
       clearInterval(ticker); setStep('s1');
       const eb=document.getElementById('err');
-      eb.textContent='Something went wrong, check your files and try again. ('+(e.message||'unknown error')+')';
+      // Never surface the raw provider error to a visitor -- it can contain
+      // internal org IDs, billing upsell text, or other backend detail that
+      // has no business being visible on a lead-facing page. Log the real
+      // error to the console for debugging, show a clean message instead.
+      console.error('Audit request failed:', e);
+      // FIXED 2026-09-19 -- checks the real HTTP status (attached to the error
+      // above) instead of matching wording, for the same reason as the retry
+      // logic above: Groq's 429 text isn't consistent, and this is exactly the
+      // choice between the honest "we're busy" message and the scary generic
+      // one, so it needs to be reliable. rawMsg regex kept only as a fallback
+      // for an error that never had a status attached (e.g. a local PDF-read
+      // failure) but still happens to mention rate limiting.
+      const rawMsg = (e && e.message) || '';
+      const wasRateLimit = (e && e.status === 429) || /rate limit/i.test(rawMsg);
+      eb.textContent = wasRateLimit
+        ? 'We\'re getting a lot of checks right now. Please wait about 20 seconds and try again.'
+        : 'Something went wrong reading your files. Please try again in a moment.';
       eb.style.display='block';
     }
   }
 
   function pct(s,max){return Math.round((s/max)*100);}
-  function working(arr){ if(!arr||!arr.length) return ''; return arr.map(w=>`<div class="find"><span class="fi" style="color:var(--good)">✓</span><span>${w}</span></div>`).join(''); }
-  function missing(arr){ if(!arr||!arr.length) return ''; return arr.map(m=>`<div class="find"><span class="fi" style="color:var(--bad)">✗</span><span><strong>${m.gap}</strong> <span class="fix">→ ${m.fix}</span></span></div>`).join(''); }
+  function observationLine(text){ if(!text) return ''; return `<div class="find"><span class="fi" style="color:var(--good)">&#10003;</span><span>${text}</span></div>`; }
+  function gapLine(gap,move){ if(!gap) return ''; return `<div class="find"><span class="fi" style="color:var(--bad)">&#10007;</span><span><strong>${gap}</strong> <span class="fix">&rarr; ${move||''}</span></span></div>`; }
+  function keepDoingLine(move){ if(!move) return ''; return `<div class="find"><span class="fi" style="color:var(--good)">&#10003;</span><span><span class="fix">Keep doing this: ${move}</span></span></div>`; }
 
   let CURRENT_REPORT = null;
 
   function renderReport(a){
     setStep('s3');
     CURRENT_REPORT = a;
-    track('report_viewed', { score: a.totalScore, rung: a.rung });
-    const p=a.pillars;
-    const rungIdx = RUNGS.indexOf(a.rung);
-    const ladderPips = RUNGS.map((r,i)=>`<span class="${i===rungIdx?'on':''}">${r}</span>`).join('');
+    track('report_viewed', { score: a.totalScore, band: bandLabel(a.totalScore) });
+    const tp = a.touchpoints || {};
+
+    const pcCardsHTML = TOUCHPOINTS.map(t=>{
+      const d = tp[t.key] || {};
+      const score = d.score || 0;
+      const status = tpStatus(score);
+      return `<div class="pc"><div class="pc-n">${t.label}</div><span class="pc-s">${score}</span><span class="pc-m"> /20</span><div class="pc-bar"><div class="pc-fill" style="width:${pct(score,20)}%"></div></div><div class="pc-status" style="color:${tpStatusColor(status)}">${status}</div></div>`;
+    }).join('');
+
+    const secsHTML = TOUCHPOINTS.map(t=>{
+      const d = tp[t.key] || {};
+      const score = d.score || 0;
+      const status = tpStatus(score);
+      const gapOrKeepGoing = d.gap ? gapLine(d.gap, d.move) : keepDoingLine(d.move);
+      return `
+          <div class="sec">
+            <div class="sec-h">${t.label} <span class="sec-pill">${score} / 20 - ${status}</span></div>
+            ${observationLine(d.observation)}${gapOrKeepGoing}
+          </div>`;
+    }).join('');
 
     const tierTeaseHTML = `
       <div class="tier-tease">
@@ -592,26 +891,23 @@ Return ONLY valid JSON, no preamble, no markdown fences. Exact structure:
         <div class="tier-tease-row"><b>Unignorable</b> Makes you unignorable in the feed</div>
       </div>`;
 
-    let ctaHTML = '';
-    if(a.recommendedTier && a.recommendedTier.tier && a.recommendedTier.tier !== 'none'){
-      ctaHTML = `
+    // UPDATED 2026-09-19 -- this used to branch on a.recommendedTier and pitch
+    // a specific tier name ("Here's your path to Remembered") as the CTA. Most
+    // reports were landing on the same tier, so the pitch read as generic
+    // rather than personal, and undercut itself as a sales hook. Collapsed to
+    // one unified, tier-agnostic CTA that leans on the fact a real person
+    // wrote the breakdown, not on which package it maps to. Tier reasoning
+    // still exists in a.recommendedTier and is still shown on Tabish's own
+    // dashboard (see openReportModal in the Worker) -- it's just no longer
+    // part of what the lead themselves reads.
+    const ctaHTML = `
         <div class="cta-block">
-          <h3>Here's your path to ${a.recommendedTier.tier}</h3>
-          <p>${a.recommendedTier.reason} The <b>${a.recommendedTier.tier}</b> tier is built exactly to close this gap.</p>
+          <h3>Want to talk it through?</h3>
+          <p>Questions about any of this? I read every message myself - DM me.</p>
           <div class="cta-row">
-            <a class="btn" href="${LINKEDIN_URL}" target="_blank" rel="noopener" style="text-decoration:none;display:block;">This made sense? Let's talk →</a>
+            <a class="btn" href="${LINKEDIN_URL}" target="_blank" rel="noopener" style="text-decoration:none;display:block;">Message me on LinkedIn &rarr;</a>
           </div>
         </div>`;
-    } else {
-      ctaHTML = `
-        <div class="cta-block">
-          <h3>You're Unignorable already</h3>
-          <p>Your profile is doing the work. If you ever want a second set of eyes on your content strategy, DM me and I'll take a look.</p>
-          <div class="cta-row">
-            <a class="btn" href="${LINKEDIN_URL}" target="_blank" rel="noopener" style="text-decoration:none;display:block;">This made sense? Let's talk →</a>
-          </div>
-        </div>`;
-    }
 
     document.getElementById('report').innerHTML = `
       <div class="tag">The Ladder Profile Audit</div>
@@ -619,43 +915,18 @@ Return ONLY valid JSON, no preamble, no markdown fences. Exact structure:
 
       <div class="rung-hero">
         <div><span class="rung-score">${a.totalScore}</span><span class="rung-den"> / 100</span></div>
-        <div class="rung-lbl">Ladder Score</div>
-        <div class="ladder-track">${ladderPips}</div>
+        <div class="lead-gap">${a.leadGap || ''}</div>
+        <div class="rung-lbl">${bandLabel(a.totalScore)}</div>
       </div>
 
       <div class="pillar-row">
-        <div class="pc"><div class="pc-n">Reliability</div><span class="pc-s">${a.scores.reliability}</span><span class="pc-m"> /35</span><div class="pc-bar"><div class="pc-fill" style="width:${pct(a.scores.reliability,35)}%"></div></div></div>
-        <div class="pc"><div class="pc-n">Readability</div><span class="pc-s">${a.scores.readability}</span><span class="pc-m"> /35</span><div class="pc-bar"><div class="pc-fill" style="width:${pct(a.scores.readability,35)}%"></div></div></div>
-        <div class="pc"><div class="pc-n">Resonance</div><span class="pc-s">${a.scores.resonance}</span><span class="pc-m"> /30</span><div class="pc-bar"><div class="pc-fill" style="width:${pct(a.scores.resonance,30)}%"></div></div></div>
+        ${pcCardsHTML}
       </div>
 
       <div class="gated-zone" id="gatedZone">
         <div class="gated-content" id="gatedContent">
 
-          <div class="sec">
-            <div class="sec-h">Reliability <span class="sec-pill">${a.scores.reliability} / 35</span></div>
-            ${working(p.reliability.working)}${missing(p.reliability.missing)}
-          </div>
-
-          <div class="sec">
-            <div class="sec-h">Readability <span class="sec-pill">${a.scores.readability} / 35</span></div>
-            ${p.readability.headline ? `<div class="headline-q">"${p.readability.headline}"</div>` : ''}
-            <div class="clarity-lbl">The 5-second test: ${p.readability.readabilityTest==='pass' ? '<span style="color:var(--good)">Pass ✓</span>' : '<span style="color:var(--bad)">Needs work ✗</span>'}</div>
-            ${working(p.readability.working)}${missing(p.readability.missing)}
-          </div>
-
-          <div class="sec">
-            <div class="sec-h">Resonance <span class="sec-pill">${a.scores.resonance} / 30</span></div>
-            ${working(p.resonance.working)}${missing(p.resonance.missing)}
-          </div>
-
-          <div class="section-label">Top 3 actions to take now</div>
-          ${a.top3.map((t,i)=>`
-            <div class="t3">
-              <div class="t3-n">Action ${i+1}</div>
-              <div class="t3-t">${t.title}</div>
-              <div class="t3-b"><b>What:</b> ${t.what}<br><b>Why:</b> ${t.why}<br><b>How:</b> ${t.how}</div>
-            </div>`).join('')}
+          ${secsHTML}
 
           ${tierTeaseHTML}
           ${ctaHTML}
@@ -669,11 +940,11 @@ Return ONLY valid JSON, no preamble, no markdown fences. Exact structure:
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
             </div>
             <h3>Your full breakdown is ready</h3>
-            <p>Enter your email and I'll send you the pillar-by-pillar findings and your <b>top 3 actions</b> — straight to your inbox.</p>
+            <p>Enter your email and I'll send you the full breakdown across all 5 areas and exactly what to fix first - straight to your inbox.</p>
 
             <div class="gate-perks">
-              <div class="gate-perk"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Exactly what's working and what's not, pillar by pillar</span></div>
-              <div class="gate-perk"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Your top 3 actions, with exactly what to change</span></div>
+              <div class="gate-perk"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Exactly what's working and what's not, area by area</span></div>
+              <div class="gate-perk"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>The single biggest thing to fix first, in plain English</span></div>
               <div class="gate-perk"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Delivered to your inbox in a minute or two</span></div>
             </div>
 
@@ -683,14 +954,14 @@ Return ONLY valid JSON, no preamble, no markdown fences. Exact structure:
               <div class="gate-err" id="gateErr">Enter a valid email to see your results.</div>
             </div>
 
-            <button class="btn" id="gateBtn" onclick="submitGate()">Unlock my full Read →</button>
+            <button class="btn" id="gateBtn" onclick="submitGate()">Unlock my full Audit &rarr;</button>
             <div class="gate-fine">No spam. Just your results and the occasional tip on visibility. Unsubscribe anytime.</div>
           </div>
         </div>
       </div>
 
       <div style="margin-top:1.1rem;">
-        <button class="btn btn-ghost" onclick="resetFlow()" type="button">Check another profile →</button>
+        <button class="btn btn-ghost" onclick="resetFlow()" type="button">Check another profile &rarr;</button>
       </div>
     `;
 
@@ -716,7 +987,7 @@ Return ONLY valid JSON, no preamble, no markdown fences. Exact structure:
       const note = document.createElement('div');
       note.className = 'unlocked-note';
       note.id = 'unlockedNote';
-      note.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Unlocked — we\'re also sending a copy to your inbox.';
+      note.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Unlocked - we\'re also sending a copy to your inbox.';
       content.prepend(note);
     }
   }
@@ -729,8 +1000,8 @@ Return ONLY valid JSON, no preamble, no markdown fences. Exact structure:
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
       </div>
       <h3>Check your inbox</h3>
-      <p>Your full breakdown is on its way — pillar-by-pillar findings and your top 3 actions.</p>
-      <div class="gate-fine">Don't see it in a minute or two? Check your spam or promotions folder — it can land there on the first email.</div>
+      <p>Your full breakdown is on its way - the full picture, area by area, plus exactly what to fix first.</p>
+      <div class="gate-fine">Don't see it in a minute or two? Check your spam or promotions folder - it can land there on the first email.</div>
     `;
   }
 
@@ -747,10 +1018,10 @@ Return ONLY valid JSON, no preamble, no markdown fences. Exact structure:
     }
     input.classList.remove('invalid');
     err.style.display = 'none';
-    if(btn){ btn.disabled = true; btn.textContent = 'Sending…'; }
+    if(btn){ btn.disabled = true; btn.textContent = 'Sending...'; }
 
-    try { if (POSTHOG_KEY && window.posthog) posthog.identify(email, CURRENT_REPORT ? { score: CURRENT_REPORT.totalScore, rung: CURRENT_REPORT.rung } : {}); } catch(e) {}
-    track('email_gate_submitted', CURRENT_REPORT ? { score: CURRENT_REPORT.totalScore, rung: CURRENT_REPORT.rung } : {});
+    try { if (POSTHOG_KEY && window.posthog) posthog.identify(email, CURRENT_REPORT ? { score: CURRENT_REPORT.totalScore, band: bandLabel(CURRENT_REPORT.totalScore) } : {}); } catch(e) {}
+    track('email_gate_submitted', CURRENT_REPORT ? { score: CURRENT_REPORT.totalScore, band: bandLabel(CURRENT_REPORT.totalScore) } : {});
 
     showInboxMessage();
 
